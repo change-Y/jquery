@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>拖拽</title>
+	<script src="jquery-3.2.1.min.js"></script>
+<style>
+div{height:100px;width:100px; background:black;position:absolute;}
+</style>
+</head>
+<script>
+	$(document).ready(function(){
+		var disX=0;
+		var disY=0;
+		$("div").mousedown(function(ev) {
+			disX=ev.pageX-$(this).offset().left;  //disX为鼠标的页面横坐标减去鼠标到div左边的长度；
+			disY=ev.pageY-$(this).offset().top;
+		$(document).mousemove(function(ev) {
+		$("div").css("left",ev.pageX-disX);//改变当前div的定位，left值为当前鼠标页面横坐标减去disX；
+		$("div").css("top",ev.pageY-disY)	
+		});
+		$("div").mouseup(function() {
+			$(document).off();//关闭document的事件；
+		});
+		return false;//阻止冒泡事件，阻止默认事件；
+		});
+	});
+</script>
+<body>
+	<div></div>
+</body>
+</html>

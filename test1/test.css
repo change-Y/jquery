@@ -1,0 +1,17 @@
+.hello{height: 20px; width: 100px; background: #CCC; margin: 5px 0px; }
+li{list-style: none; background: #3BD3B6; display: block; margin-top: 2px; width: 100px; text-align: center; }
+a{text-decoration-line: none;display: block; } 
+a:active{color:blue;}
+a:hover{color: black;}
+ul,li{padding: 0; }
+.main>ul,.hmain>ul{background: #CCC; display: none; }
+.main,.hmain{background: #CCC; }
+.hmain{margin-right: 2px;float: left;}
+#hbar{height: 110px}
+hr{border-top: red solid 2px;}
+#hrdiv{clear: both;}
+.btn{height: 20px;width: 60px;background: #ccc;border: 1px solid #B9FDF0}
+.div{height: 200px;width: 200px;border: 1px solid red;display: none;text-align: center;}
+#tabdiv{clear: both;}
+#actBtn{background: #947F7F}
+#actDiv{display: block;}

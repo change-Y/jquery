@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script src="图片滑动切换.js"></script>
+</head>
+<style>
+	body{
+		margin: 0;
+		padding:0;
+	}
+	div{
+		width: 520px;
+		height: 280px;
+		overflow: hidden;
+		position: relative;
+	}
+	div img{
+		float: left;
+	}
+	#first{
+		position: absolute;
+
+	}
+</style>
+<body>
+	<div>
+	<img src="../html学习/仿制淘宝网/images/ad_hr001.png" alt="" id="first">
+	<img src="../html学习/仿制淘宝网/images/ad_hr002.png" alt="">
+	<img src="../html学习/仿制淘宝网/images/ad_hr003.png" alt="">
+
+	</div>
+	<button id="btn" click="startMove()">开始运动</button>
+</body>
+</html>
