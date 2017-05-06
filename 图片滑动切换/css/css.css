@@ -1,0 +1,28 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+li{
+	list-style: none;
+	float: left;
+}
+.content img{
+	width: 520px;
+	height: 280px;
+}
+.content{
+	height: 280px;
+	width: 520px;
+	overflow: hidden;
+	position: relative;
+	margin: 0 auto;
+}
+ul{
+	width: 3640px;
+	position: absolute;
+
+}
+.btn{
+	width: 520px;
+	margin: 0 auto;
+}
